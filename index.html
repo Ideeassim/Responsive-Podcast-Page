@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="./src/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+  </head>
+  <body>
+    <div class="inner"></div>
+    <div class="bg-elements" style="z-index: -1;">
+      <div class="rectangle shape"></div>
+      <div class="big-square shape"></div>
+      <div class="small-square shape"></div>
+      <div class="bg-dots">
+          <img src="./src/assets/desktop/bg-pattern-dots.svg" alt="">
+      </div>
+      <div class="contents">
+        <div class="logo">
+          <img src="./src/assets/desktop/logo.svg" alt="">
+        </div>
+
+        <div class="text-contents">
+          <div class='textBox'>
+              <h3 class='publish'><span>PUBLISH YOUR<br/> PODCASTS</span><br/> EVERYWHERE</h3>
+              
+              <p class='upload'>Upload your audio to Pod with a single click.<br class="mob"/> We’ll <br class="tab"/> then distribute your podcast to Spotify,<br class="mob"/> 
+              Apple <br class="tab"/> Podcasts, Google Podcasts, Pocket <br class="mob"/> Casts and more!</p>
+          </div>
+          <div class='social-logo'>
+            <div class='spotify'><img src='./src/assets/desktop/spotify.svg' alt='spotify logo' /></div>
+            <div class='apple'><img src="./src/assets/desktop/apple-podcast.svg" alt='apple logo' /></div>
+            <div class='google'><img src="./src/assets/desktop/google-podcasts.svg" alt='google logo' /></div>
+            <div class='pocketCasts'><img src="./src/assets/desktop/pocket-casts.svg" alt='pocket-casts logo' /></div>
+          </div> 
+         
+          <div id="root"></div>  
+      </div>
+    </div>
+    
+    <script type="module" src="./src/main.jsx"></script>
+  </body>
+</html>

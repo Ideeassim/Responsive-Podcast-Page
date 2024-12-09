@@ -1,0 +1,432 @@
+
+/* @font-face {
+  font-family: 'Chivo';
+  src: url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&display=swap');
+} */
+
+div#root{
+  font-family: 'Chivo';
+}
+.inner{
+  width: 26.4rem;
+  height: 42.6rem;   
+background: rgb(18, 23, 37);
+opacity: 0.8
+}
+
+.contents{
+  z-index: 1;
+  position: absolute;
+  top: 18%;
+  left: 10%;
+  
+  /* border: solid #C2CBE5; */
+}
+
+/* text-content */
+.textBox{
+  opacity: 1;
+  color: white;
+  font-family: 'Chivo', sans-serif;
+  height: 13.7rem;
+  /* border: solid red; */
+  margin-bottom: 0%;
+}
+.publish>span{
+  color:#54E6AF ;
+  
+}
+.publish{
+font-family: 'Chivo';
+Font-weight: 100;
+Font-size: 1.75rem;
+margin-top: 0.188rem;
+letter-spacing: 0rem;
+text-align: center;
+margin-bottom: 0%;
+line-height: 2.125rem;
+}
+.upload{
+  font-family: 'Chivo';
+  font-size: 0.9rem;
+  text-align: center;
+  color: #C2CBE5;
+  font-weight: 100;
+  margin-bottom: 0%;
+  line-height: 1.5rem;
+}
+
+
+/* logo section */
+.social-logo{
+  display: flex;
+  width: 17rem;
+  /* border: solid blue; */
+  justify-content: space-between;
+ margin-bottom: 2rem ;
+ margin-top: 1rem;
+  
+}
+.social-logo>div{
+  width: 3rem;
+  /* border: solid lawngreen; */
+  height: 2rem;
+}
+.social-logo>div>img{
+  max-width: 100%;
+}
+
+/* REACT COMPS */
+.form-div{
+  
+  font-family: 'Chivo';
+  
+  /* border: #FB3E3E solid; */
+}
+input{
+  width: 15rem;
+  height: 2.75rem;
+  border: 0px;
+  border-radius: 62.43rem;
+  background: #2c344b;
+  color: white;
+  padding-left: 2rem;
+  font-size: 1rem;
+ font-family: 'Chivo';
+  font-weight: 100;
+  &::placeholder {    
+    color: #C2CBE5;
+    font-family: 'Chivo';
+  font-weight: 100;
+  }
+}
+input:hover{
+  background-color: #5A668A;
+  cursor: pointer;
+}
+input:focus-visible {
+  outline: none;
+}
+
+button{
+  width: 17.2rem;
+  height: 2.75rem;
+  border-radius: 62.43rem;
+  background: #54E6AF;
+  border: none;
+  font-weight: 500;
+  font-size: 1rem;
+  font-family: 'Chivo';
+  cursor: pointer;
+}
+.errors{
+  color: #FB3E3E;
+  text-align: center;
+}
+
+/* TAB/DESKTOP CSS */
+.rectangle{
+  background-color: #121725;
+  width: 110%;
+  height: 7.5rem;     
+  position:absolute;
+   top: 52rem;
+  left: -1rem;
+ 
+}
+
+.big-square{
+  height: 35rem;
+  width: 39rem;
+  background-color: #121725;
+ 
+  position: absolute;
+  top: 22.5rem;
+  left: -1rem;
+}
+
+.small-square{
+  position: absolute;
+  width: 23rem;
+  height: 23rem;
+  top: 0rem;
+  left: -1rem;
+  background-color: #121725;
+  z-index: 1;
+}
+.bg-dots{
+  height: 8rem;
+  width: 7rem;
+  position: absolute;
+  top: 49rem;
+  left: 41rem;       
+  object-fit: contain;
+  overflow: hidden;
+  /* border: solid black; */
+}
+.bg-dots>img{
+  width: 14rem;
+}
+/* MOBILE-PORTRAIT */
+@media (min-width: 320px) and (max-width: 480px) {
+body{
+  background-image: url(./assets/mobile/image-host.jpg);
+  background-repeat: no-repeat;
+  background-size: 25.4rem 42.6rem;
+  position: relative;
+  
+}  
+body,
+::after,
+::before {
+box-sizing: border-box !important;
+padding: 0px !important;
+margin: 0px !important;
+}
+.inner{
+  width: 25.4rem;
+  height: 42.6rem;
+}
+.text-contents{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+.bg-dots{
+  display: none;
+}
+.shape{
+  display: none;
+}
+.contents{
+  margin-left: 0rem;
+  margin-right: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.upload{
+  font-size: 0.6rem;
+  line-height: 1.3rem;
+}
+.form-div{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: center;
+}
+.tab{
+  display: none;
+}
+}
+
+/* mobile landscape */
+@media (min-width: 481px) and (max-width: 767px) {
+  body{
+    background-image: url(./assets/mobile/image-host.jpg);
+    background-repeat: no-repeat;
+    background-size: 50rem 38rem;
+    
+
+}  
+  body,
+::after,
+::before {
+  box-sizing: border-box !important;
+  padding: 0px !important;
+  margin: 0px !important;
+}
+.inner{
+  width: 46rem;
+  height: 38rem;   
+background: rgb(18, 23, 37);
+opacity: 0.8
+}
+.text-contents{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+}
+.contents{
+  top: 18%;
+  left: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bg-dots{
+  display: none;
+}
+.shape{
+  display: none;
+}
+.form-div{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: center;
+}
+.tab{
+  display: none;
+}
+input{
+  font-size: 1.1rem;
+}
+}
+
+
+/* TABLET */
+/* portrait */
+@media (min-width: 768px) and (max-width: 1024px) {
+  body{
+    background-image: url(./assets/mobile/image-host.jpg);
+    background-size: 30rem 59rem;
+    background-position-x:110% ;
+    background-repeat: no-repeat;
+    position: relative;
+}
+body,
+::after,
+::before {
+  box-sizing: border-box !important;
+  padding: 0px !important;
+  margin: 0px !important;
+}
+.inner{
+  width: 48.4rem;
+  height: 59rem;
+}
+.contents{
+height: 37.5rem;
+width: 30rem;
+top: 10%;
+padding-top: 30%;
+}
+.logo{
+  position: absolute;
+  top: 10%;
+}
+.textBox{
+  position: absolute;
+  top: 40%;
+  width: 25rem;
+  
+}
+.publish{
+  text-align: left;
+}
+.upload{
+  text-align: left;
+  font-size: 1.05rem;
+}
+.social-logo{
+  position: absolute;
+  top: 86%;
+  width: 30rem;
+  height: 3.5rem;
+}
+.social-logo>div{
+  width: 6rem;
+
+  height: 2.5rem;
+}
+#root{
+  position: absolute;
+  top: 72%;
+}
+.form-div{
+  height: 5rem;
+  width: 29rem;
+  border: none;
+}
+input{
+  height: 3.2rem;
+  width: 23rem;
+  position: absolute;
+  font-size: 1.15rem;
+}
+button{
+  width: 10rem;
+  height: 3.2rem;
+  position: absolute;
+  left: 52%;
+  top: 1%;
+}
+.mob{
+  display: none;
+}
+.tab{
+  display: block;
+}
+.rectangle{
+  width: 106%;
+}
+.errors{
+  position: absolute;
+  top: 80%;
+  left: 5%;
+  font-size: 1.2rem;
+}
+}
+/*LANDSCAPE */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  body{
+    background-image: url(./assets/mobile/image-host-rev5.jpg);
+    background-repeat: no-repeat;
+    background-size: 45% 59rem;
+    background-position-x:100% ;
+
+}  
+  body,
+::after,
+::before {
+  box-sizing: border-box !important;
+  padding: 0px !important;
+  margin: 0px !important;
+}
+.inner{
+  width: 62.7rem;
+  height: 59rem;
+}
+.mob{
+  display: none;
+}
+.tab{
+  display: block;
+}
+.small-square{
+  width: 36rem;
+}
+.rectangle{
+  width: 101.7%;
+}
+.textBox{
+  top: 30%;
+  /* border: solid aqua; */
+}
+
+.bg-dots{
+  top: 49rem;
+  left: 56rem; 
+}
+input{
+  font-size: 1.2rem;
+}
+.errors{
+  font-size: 1.2rem;
+  position: absolute;
+  top: 4rem;
+}
+.form-div{
+  /* border: solid white; */
+  height: 7rem;
+  position: absolute;
+  top: -5rem;
+}
+.social-logo{
+  position: absolute;
+  top: 46rem;
+}
+}
