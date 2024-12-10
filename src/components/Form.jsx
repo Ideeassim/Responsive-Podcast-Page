@@ -30,7 +30,7 @@ function handleSubmit(event) {
         placeholder='Email address'
         value={userEmail}
         onChange={userTyped}
-        style={{border: errors.userEmail? 'solid #FB3E3E12px' : 'none'}}/>
+        style={{border: errors.userEmail? 'solid #FB3E3E 2px' : 'none'}}/>
 
         <button type='submit'>Request Access</button>
        {errors.userEmail && <span className='errors'>{errors.userEmail}</span>}
